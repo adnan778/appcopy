@@ -12,7 +12,7 @@
 <div class="register-box" >
 
   <div class="card" style="background-color: #f8f9fA;">
-    <div class="card-body register-card-body">
+    <div class="card-body register-card-body" style="background: #81dadd;box-shadow: 1px 8px 32px 1px #6e6565;">
       <p class="login-box-msg">Register a new member</p>
 
       <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
