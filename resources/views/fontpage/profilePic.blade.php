@@ -24,7 +24,7 @@
                         
                     <form method="POST" action="{{ route('updateimage') }}" enctype="multipart/form-data">
                            @csrf
-                        <input type="file" name="image">
+                        <input type="file" name="image" required>
                         <button type="submit" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2">
                          Change Image
                     
