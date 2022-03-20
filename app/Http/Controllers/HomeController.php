@@ -9,6 +9,7 @@ use App\Models\Blog;
 use Illuminate\Support\Facades\Auth;
 use Image;
 use Illuminate\Support\Facades\Session;
+use File;
 class HomeController extends Controller
 {
     /**
@@ -83,9 +84,13 @@ class HomeController extends Controller
         $file_path->save($file_name);
     
             $data=user::find(Auth::user()->id);
+            if (File::exists($data->image)) {
+                  File::delete($data->image);
+            }
             $data->image=$file_name;
             $data->update();
             Session::flash('success',' Your profile Picture has been Changed! ');
+            
             return redirect()->route('changeProfilePicture');
     }
     public function newPostAdd()
