@@ -86,7 +86,7 @@
                             <div class="form-group col-lg-6">
                               
                             <label for="feInputAddress">Date Of Birth</label>
-                              <input type="date" class="form-control" name="date" id="feInputAddress" value="{{$users->date}}" placeholder="{{$users->date}}">
+                                      <input type="date" class="form-control" name="date" id="feInputAddress" value="{{$users->date}}" placeholder="{{$users->date}}">
                               
                               </div>
                               <div class="form-group col-lg-6">

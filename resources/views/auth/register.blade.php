@@ -127,7 +127,10 @@
      <div class="alert alert-danger">{{ $message }}</div>
  @enderror
         </div>
-       
+        <div class="input-group mb-3">
+               {!! NoCaptcha::renderJs('en', false, 'onloadCallback') !!}
+				       {!! NoCaptcha::display() !!}
+        </div>
         <button type="submit" class="btn btn-primary btn-block">Sign up</button>
       </form>
 
@@ -145,7 +148,11 @@
     </div>
 </div>
 
-
+<script>
+        var onloadCallback = function() {
+        alert("grecaptcha is ready!");
+        };
+    </script>
 @endsection
 
 
