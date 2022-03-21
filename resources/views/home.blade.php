@@ -45,7 +45,7 @@
                     <h5 class="card-title">
                       <a class="text-fiord-blue" href="#">Off tears are day blind smile alone had ready</a>
                     </h5>
-                    <p class="card-text d-inline-block mb-3">Is at purse tried jokes china ready decay an. Small its shy way had woody downs power. To denoting admitted speaking learning my...</p>
+                    <p class="card-text d-inline-block mb-3" data-maxlength="20">Is at purse tried jokes china ready decay an. Small its shy way had woody downs power. To denoting admitted speaking learning my...</p>
                     <span class="text-muted">29 February 2019</span>
                   </div>
                 </div>
