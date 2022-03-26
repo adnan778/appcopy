@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\editController;
 use App\Http\Controllers\BlogPost;
 
 
@@ -55,11 +56,16 @@ Route::post('change-Password',[BlogPost::class,'updatePassword'])->name('updateP
 
 // informationInput
 Route::post('information-insert',[BlogPost::class,'informationInput'])->name('informationInput');
-Route::get('information-SEE/{id}',[BlogPost::class,'seeinfo'])->name('seeinfo');
+Route::get('information-SEE',[BlogPost::class,'seeinfo'])->name('seeinfo');
 
 // downloadPDF
 
 Route::get('downloadPDF-SEE',[BlogPost::class,'downloadPDF'])->name('downloadPDF');
+
+// edit.info
+Route::get('editInfo',[editController::class,'editInfo'])->name('edit.info');
+// updateInfo
+Route::post('update-Information{id}',[editController::class,'updateInfo'])->name('updateInfo');
 
 
 

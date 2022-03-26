@@ -56,7 +56,7 @@
           <div class="row">
             <div class="col-md-8"></div>
             <div class="col-md-2">
-            <a class="btn btn-primary btn-sm" href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+            <a class="btn btn-primary btn-sm" href="{{route('edit.info')}}"><i class="fa-solid fa-pen-to-square"></i></a>
 
             </div>
             <div class="col-md-2">
