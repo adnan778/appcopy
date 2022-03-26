@@ -54,13 +54,19 @@
         </div>
         <div class="col-md-4">
           <div class="row">
-            <div class="col-md-8"></div>
+            <div class="col-md-6"></div>
+            <div class="col-md-2">
+            
+            <a class="btn btn-warning btn-sm" href="{{route('home')}}"><i class="fa-solid fa-house"></i></a>
+
+            </div>
+
             <div class="col-md-2">
             <a class="btn btn-primary btn-sm" href="{{route('edit.info')}}"><i class="fa-solid fa-pen-to-square"></i></a>
 
             </div>
             <div class="col-md-2">
-            <a class="btn btn-danger btn-sm" href="#"><i class="fa-solid fa-download"></i></a>
+            <a class="btn btn-info btn-sm" href="#"><i class="fa-solid fa-download"></i></a>
 
             </div>
           </div>
