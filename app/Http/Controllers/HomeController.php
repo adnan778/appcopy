@@ -95,6 +95,9 @@ class HomeController extends Controller
     }
     public function newPostAdd()
     {
-   return view('fontpage.addPost');
+     $info = DB::table('users')->where('id',Auth::user()->id)->first();
+
+        // echo $info->name;
+   return view('fontpage.addPost',compact('info'));
     }
 }

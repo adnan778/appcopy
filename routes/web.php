@@ -48,6 +48,24 @@ Route::post('addBlogPost',[BlogPost::class,'abpost'])->name('insert.blog');
 Route::get('change-Password',[BlogPost::class,'changePassword'])->name('changePassword');
 Route::post('change-Password',[BlogPost::class,'updatePassword'])->name('updatePassword');
 
+
+
+
+
+
+// informationInput
+Route::post('information-insert',[BlogPost::class,'informationInput'])->name('informationInput');
+Route::get('information-SEE/{id}',[BlogPost::class,'seeinfo'])->name('seeinfo');
+
+// downloadPDF
+
+Route::get('downloadPDF-SEE',[BlogPost::class,'downloadPDF'])->name('downloadPDF');
+
+
+
+
+
+Route::get('/pdf',[BlogPost::class,'pdf']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

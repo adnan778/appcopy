@@ -1,0 +1,60 @@
+input {
+    width: 100%;
+  }
+  
+
+.formImput {
+    margin: 16px 0px;
+    border-radius: 8px;
+    padding: 5px 19px;
+    background: transparent;
+border: 1px solid #c2c1c1;
+}
+.formDiv {
+    padding: 24px 31px;
+    margin: 24px 0px;
+    border-radius: 21px;
+    background: #ffffff;
+  }
+  ::-webkit-input-placeholder{
+    color: rgb(20, 19, 19);
+  }
+  select.formImput.country {
+    width: 100%;
+}
+
+.form_title h3 {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    color: #3c3030;
+    text-shadow: 1px 2px 2px black;
+  }
+
+.row.education {
+
+
+    padding: 10px 0px;
+
+}
+.w3review {
+    background: transparent;
+    border-radius: 13px;
+    padding: 4px 26px;
+    
+  }
+  .lastcompany{
+    /* border-bottom: 1px solid #666; */
+    padding: 10px 0px; 
+  }
+  button.submitbtn {
+    background: #d8e6e0;
+    color: #fff;
+    border: none;
+    border-radius: 23px;
+    padding: 10px;
+    width: 40%;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+  }
