@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use DB;
 use App\Models\user;
 use App\Models\Blog;
+use App\Models\infodatainsert;
 use Illuminate\Support\Facades\Auth;
 use Image;
 use Illuminate\Support\Facades\Session;
@@ -95,6 +96,13 @@ class HomeController extends Controller
     }
     public function newPostAdd()
     {
+        $profilePic = DB::table('infodatainserts')->first();
+      
+        if($profilePic->userid == Auth()->user()->id){
+return redirect()->route('seeinfo');
+        }
+
+
      $info = DB::table('users')->where('id',Auth::user()->id)->first();
 
         // echo $info->name;
