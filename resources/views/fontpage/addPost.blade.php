@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="/addinfo/index.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />                 
+
            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
     <title>info</title>
@@ -437,14 +439,14 @@
         $('#add2').click(function(){ 
         
           if (  i++,i<=3) {
-              $('#dynamic_field2').append('<tr id="row'+i+'"><td><input type="text" name="exam'+i+'" placeholder="Exam Name" class="form-control name_list" /></td><td><input type="text" name="dec'+i+'" placeholder="Institute Name" class="form-control name_list" /></td><td><input type="number" name="gpa'+i+'" placeholder="GPA" class="form-control name_list" /></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');  
+              $('#dynamic_field2').append('<tr id="row2'+i+'"><td><input type="text" name="exam'+i+'" placeholder="Exam Name" class="form-control name_list" /></td><td><input type="text" name="dec'+i+'" placeholder="Institute Name" class="form-control name_list" /></td><td><input type="number" name="gpa'+i+'" placeholder="GPA" class="form-control name_list" /></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove2"><i class="fa-solid fa-trash-can"></i></button></td></tr>');  
       
             }
             }); 
 
-      $(document).on('click', '.btn_remove', function(){  
+      $(document).on('click', '.btn_remove2', function(){  
            var button_id = $(this).attr("id");   
-           $('#row'+button_id+'').remove();  
+           $('#row2'+button_id+'').remove();  
       }); 
     
  });  
@@ -456,7 +458,7 @@
       var i=1;  
       $('#add').click(function(){  
         if (  i++,i<=3) {
-           $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="job'+i+'" placeholder="Company Name" class="form-control name_list" /></td><td><input type="text" name="work'+i+'" placeholder="Refarence" class="form-control name_list" /></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');  
+           $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="job'+i+'" placeholder="Company Name" class="form-control name_list" /></td><td><input type="text" name="work'+i+'" placeholder="Refarence" class="form-control name_list" /></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove"><i class="fa-solid fa-trash-can"></i></button></td></tr>');  
         }
           });  
       $(document).on('click', '.btn_remove', function(){  
