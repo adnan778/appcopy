@@ -28,12 +28,12 @@
               <li class="nav-item">
                 <a class="nav-link " href="{{route('newPostAdd')}}">
 
-                  <span>Add New Post</span>
+                  <span>Add About You</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="{{route('home')}}">
-                  <span> View Blog</span>
+                <a class="nav-link " href="{{route('seeinfo')}}">
+                  <span>About us</span>
                 </a>
               </li>
             
