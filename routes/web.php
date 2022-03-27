@@ -67,6 +67,9 @@ Route::get('editInfo',[editController::class,'editInfo'])->name('edit.info');
 // updateInfo
 Route::post('update-Information{id}',[editController::class,'updateInfo'])->name('updateInfo');
 
+// pdfmake
+Route::get('pdfmake',[editController::class,'pdfmake'])->name('pdfmake');
+
 
 
 

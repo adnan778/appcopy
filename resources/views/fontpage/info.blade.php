@@ -66,7 +66,7 @@
 
             </div>
             <div class="col-md-2">
-            <a class="btn btn-info btn-sm" href="#"><i class="fa-solid fa-download"></i></a>
+            <a class="btn btn-info btn-sm" href="{{route('pdfmake')}}"><i class="fa-solid fa-download"></i></a>
 
             </div>
           </div>

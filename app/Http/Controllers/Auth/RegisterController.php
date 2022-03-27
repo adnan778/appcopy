@@ -71,15 +71,28 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 
+    //     $file_extention = $data['image']->getClientOriginalExtension();
+    //     $file_name = time().rand(99,999).'image.'.$file_extention;
+    //    $file_path = $data['image'];
+
+
+
+
+    //     $file_path =Image::make($file_path)->resize(300, 200);
+    //     $file_path->save($file_name);
+
+
+
         $file_extention = $data['image']->getClientOriginalExtension();
         $file_name = time().rand(99,999).'image.'.$file_extention;
-       $file_path = $data['image'];
+  $file_path = $data['image'];
 
 
 
 
-        $file_path =Image::make($file_path)->resize(300, 200);
-        $file_path->save(public_path('Nfolder'),$file_name);
+        $file_path =Image::make($file_path)->resize(300, 300);
+
+        $file_path->save($file_name);
 
         return User::create([
             'name' => $data['name'],

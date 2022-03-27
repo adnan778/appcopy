@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\infodatainsert;
 use DB;
+use Auth;
 use Illuminate\Support\Facades\Session;
 
 class editController extends Controller
@@ -47,5 +48,16 @@ class editController extends Controller
        $updateInfo->update();
    Session::flash('success',' Your profile has been updated! ');
        return redirect()->route('edit.info');
+    }
+    public function pdfmake()
+    {
+        // $users = DB::table('users')->where('id',Auth::user()->id)->first();
+        
+
+        $mpdf = new \Mpdf\Mpdf();
+        // $data=view('profile')->with('users', $users);
+        $mpdf->WriteHTML(file_get_contents('http://localhost:8000/home'));
+      
+       $mpdf->Output();
     }
 }
