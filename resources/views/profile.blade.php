@@ -31,19 +31,14 @@
                 <div class="card card-small mb-4 pt-3">
                   <div class="card-header border-bottom text-center">
                     <div class="mb-3 mx-auto">
-                      <img id="picture" class="rounded-circle" src="/{{$users->image}}" alt="User Avatar" width="110"> </div>
+                    <a href="{{route('changeProfilePicture')}}">
+                      <img id="picture" class="rounded-circle" src="/{{$users->image}}" alt="User Avatar" width="110">
+                    </a>
+                     </div>
                     <h4 class="mb-0">{{$users->name}}</h4>
                  
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-4" style="margin: auto;">
-                      <div class="progress-wrapper mb-3 mx-auto">
-                        <a class="btn btn-info btn-sm prifile " href="{{route('changeProfilePicture')}}">Change Profile Picture</a>
-                      
-                      </div>
-                    </li>
-                   
-                  </ul>
+
                 </div>
               </div>
 

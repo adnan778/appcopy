@@ -51,12 +51,13 @@ class editController extends Controller
     }
     public function pdfmake()
     {
-        // $users = DB::table('users')->where('id',Auth::user()->id)->first();
-        
+         $info = DB::table('infodatainserts')->where('userid',Auth()->user()->id)->first();
+
+
 
         $mpdf = new \Mpdf\Mpdf();
-        // $data=view('profile')->with('users', $users);
-        $mpdf->WriteHTML(file_get_contents('http://localhost:8000/home'));
+
+        $mpdf->WriteHTML("$info->name");
       
        $mpdf->Output();
     }
