@@ -20,7 +20,6 @@
         <div class="row">
 <div class="col-lg-2"></div>
             <div class="col-lg-8">
-
                       <div class="formDiv">
                       <a class="btn btn-primary btn-sm" href="{{route('seeinfo')}}">SEE YOUR DATA</a>
                           <form method="POST" action="{{route('updateInfo',$editData->id)}}">
