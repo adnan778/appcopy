@@ -18,16 +18,6 @@
 
     <div class="container">
         <div class="row">
-        @if(Session::has('success'))
-          <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
-                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                      </button>
-                      <i class="fa fa-check mx-2"></i>
-                      <strong>Success!</strong>{{ Session::get('success') }}
-                    
-          </div>
-          @endif
 <div class="col-lg-2"></div>
             <div class="col-lg-8">
 
@@ -400,15 +390,15 @@
                                <table style="border: 1px transparent;" class="table" id="dynamic_field">  
                                     <tr>  
                                          <td><input type="text" name="job1" placeholder="Company Name" class="form-control name_list" value="{{ $editData->job1}}" /></td>  
-                                         <td><input type="text" name="work1'" placeholder="Refarence" class="form-control name_list"  value="{{ $editData->work1 }}"/></td>   
+                                         <td><input type="text" name="work1" placeholder="Refarence" class="form-control name_list"  value="{{ $editData->work1 }}"/></td>   
                                     </tr>  
                                     <tr>  
                                          <td><input type="text" name="job2" placeholder="Company Name" class="form-control name_list" value="{{ $editData->job2}}" /></td>  
-                                         <td><input type="text" name="work2'" placeholder="Refarence" class="form-control name_list"  value="{{ $editData->work2 }}"/></td>   
+                                         <td><input type="text" name="work2" placeholder="Refarence" class="form-control name_list"  value="{{ $editData->work2 }}"/></td>   
                                     </tr>  
                                     <tr>  
                                          <td><input type="text" name="job3" placeholder="Company Name" class="form-control name_list" value="{{ $editData->job3}}" /></td>  
-                                         <td><input type="text" name="work3'" placeholder="Refarence" class="form-control name_list"  value="{{ $editData->work3 }}"/></td>   
+                                         <td><input type="text" name="work3" placeholder="Refarence" class="form-control name_list"  value="{{ $editData->work3 }}"/></td>   
                                     </tr>  
                                </table>  
                                   </div>

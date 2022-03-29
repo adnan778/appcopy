@@ -1,150 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Resume/CV Design</title>
-	<link rel="stylesheet" href="/cv/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-</head>
-<body>
-<div class="resume">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="op.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
 
 
-   <div class="resume_left">
-     
-     <div class="resume_profile">
-       <img src="{{Auth::user()->image}}" alt="profile_pic">
-     </div>
-     <div class="resume_content">
-       <div class="resume_item resume_info">
-         <div class="title">
-           <p class="bold">{{$info->name}}</p>
-         </div>
-         <ul>
-           <li>
-           
-             <div class="data">
-             {{$info->address}} <br /> {{$info->country}}
-             </div>
-           </li>
-           <li>
-         
-             <div class="data">
-             {{$info->phone}}
-             </div>
-           </li>
-           <li>
-            
-             <div class="data">
-             {{$info->email}}
-             </div>
-           </li>
-          
-         </ul>
-       </div>
-      
-       <div class="resume_item resume_social">
-         <div class="title">
-           <p class="bold">Social</p>
-         </div>
-         <ul>
-           <li>
-             <div class="data">
-               <p class="semi-bold">GANDER</p>
-               <p>{{$info->gander}}</p>
-             </div>
-           </li>
-           <li>
-             <div class="data">
-               <p class="semi-bold">DATE OF BIRTH</p>
-               <p>{{$info->date}}</p>
-             </div>
-           </li>
-           <li>
-             <div class="data">
-               <p class="semi-bold">AGE</p>
-               <p>{{$info->age}}</p>
-             </div>
-           </li>
-           <li>
-             <div class="data">
-               <p class="semi-bold">NATIONALITY</p>
-               <p>{{$info->nationality}}</p>
-             </div>
-           </li>
-           <li>
-             <div class="data">
-               <p class="semi-bold">AGE</p>
-               <p>{{$info->age}}</p>
-             </div>
-           </li>
-         
-         </ul>
-       </div>
-     </div>
-  </div>
-  <div class="resume_right">
- 
-    <div class="resume_item resume_work">
-        <div class="title">
-           <p class="bold">Work Experience</p>
-         </div>
-        <ul>
-            <li>
-                <div class="date">{{$info->job1}}</div> 
-                <div class="info">
-                   
-                  <p>{{$info->work1}}</p>
-                </div>
-            </li>
-            <li>
-              <div class="date">{{$info->job2}}</div>
-              <div class="info">
-                 
-                  <p>{{$info->work2}}</p>
-                </div>
-            </li>
-            <li>
-              <div class="date">{{$info->job3}}</div>
-              <div class="info">
-                   
-                  <p>{{$info->work3}}</p>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="resume_item resume_education">
-      <div class="title">
-           <p class="bold">Education</p>
-         </div>
-      <ul>
-            <li>
-                <div class="date">{{$info->exam}}</div> 
-                <div class="info">
-                     <p class="semi-bold">SCHOOL: {{$info->dec}}</p> 
-                  <p>GPA: {{$info->gpa}}</p>
-                </div>
-            </li>
-            <li>
-              <div class="date">{{$info->examB}}</div>
-              <div class="info">
-                     <p class="semi-bold">COLLAGE: {{$info->decB}}</p>
-                     <p>GPA: {{$info->gpaB}}</p>
-                </div>
-            </li>
-            <li>
-              <div class="date">{{$info->examC}}</div>
-              <div class="info">
-                     <p class="semi-bold">UNIVERCITY: {{$info->decC}}</p>
-                     <p>GPA: {{$info->gpaC}}</p>
-                </div>
-            </li>
-        </ul>
-    </div>
-   
-  </div>
-</div>
 
-</body>
+
+
+
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>

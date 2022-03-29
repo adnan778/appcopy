@@ -46,19 +46,22 @@ class editController extends Controller
    
        //  dd($infoUpto->all());
        $updateInfo->update();
-   Session::flash('success',' Your profile has been updated! ');
        return redirect()->route('edit.info');
     }
     public function pdfmake()
     {
-         $info = DB::table('infodatainserts')->where('userid',Auth()->user()->id)->first();
+        $stylesheet = file_get_contents('op.css');
 
-
+        $info = DB::table('infodatainserts')->where('userid',Auth()->user()->id)->first();
+         $html=view('fontpage.info',compact('info'))->render();
+   
 
         $mpdf = new \Mpdf\Mpdf();
-
-        $mpdf->WriteHTML("$info->name");
+        $stylesheet = file_get_contents('op.css');
+ 
+        $mpdf->WriteHTML($stylesheet, 1); // CSS Script goes here.
+        $mpdf->WriteHTML($html,2);
       
-       $mpdf->Output();
+       $mpdf->Output(`profile.pdf`,"D");
     }
 }

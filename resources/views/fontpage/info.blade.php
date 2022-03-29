@@ -8,7 +8,6 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />                 
-
     <title>info page</title>
   </head>
   <body>
@@ -17,35 +16,37 @@
 <div class="container rounded bg-white mt-5 mb-5">
     <div class="row">
         <div class="col-md-3 border-right">
-            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="/{{Auth()->user()->image}}"><span class="font-weight-bold">{{$info->name}}</span></div>
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+              <img class="rounded-circle mt-5 image" width="150px" src="{{Auth()->user()->image}}">
+              <span class="font-weight-bold imgspan">{{$info->name}}</span></div>
         </div>
         <div class="col-md-5 border-right">
             <div class="p-3 py-5">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h4 class="text-right">User Profile</h4>
                 </div>
-                <div class="row mt-3">
+                <div class="inforow row mt-3">
                     <div class="col-md-12">Name : {{$info->name}}</div>
                 </div>
-                <div class="row mt-3">
+                <div class="inforow row mt-3">
                     <div class="col-md-12">Email : {{$info->email}}</div>
                 </div>
-                <div class="row mt-3">
+                <div class="inforow row mt-3">
                     <div class="col-md-12">Phone : {{$info->phone}}</div>
                 </div>
-                <div class="row mt-3">
+                <div class="inforow row mt-3">
                     <div class="col-md-12">Nationality : {{$info->nationality}}</div>
                 </div>
-                <div class="row mt-3">
+                <div class="inforow row mt-3">
                     <div class="col-md-12">Country : {{$info->country}}</div>
                 </div>
-                <div class="row mt-3">
+                <div class="inforow row mt-3">
                     <div class="col-md-12">Address : {{$info->address}}</div>
                 </div>
-                <div class="row mt-3">
+                <div class="inforow row mt-3">
                     <div class="col-md-12">Date Of Birth : {{$info->date}}</div>
                 </div>
-                <div class="row mt-3">
+                <div class="inforow row mt-3">
                     <div class="col-md-12">Age : {{$info->age}}</div>
                 </div>
             
@@ -94,9 +95,9 @@
       <td>{{$info->gpaB}}</td>
     </tr>
     <tr>
-      <td style="border-bottom:none;">{{$info->examC}}</td>
-      <td style="border-bottom:none;">{{$info->decC}}</td>
-      <td style="border-bottom:none;">{{$info->gpaC}}</td>
+      <td class="last_td">{{$info->examC}}</td>
+      <td class="last_td">{{$info->decC}}</td>
+      <td class="last_td">{{$info->gpaC}}</td>
     </tr>
    
   </tbody>
@@ -124,8 +125,8 @@
       <td>{{$info->work2}}</td>
     </tr>
     <tr>
-      <td style="border-bottom:none;">{{$info->job3}}</td>
-      <td style="border-bottom:none;">{{$info->work3}}</td>
+      <td class="last_td">{{$info->job3}}</td>
+      <td class="last_td">{{$info->work3}}</td>
     </tr>
    
    
@@ -161,3 +162,4 @@
    
   </body>
 </html>
+
