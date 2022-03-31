@@ -82,11 +82,11 @@ class HomeController extends Controller
 
         $file_path =Image::make($file_path)->resize(300, 300);
 
-        $file_path->save($file_name);
+        $file_path->save('uimg/'.$file_name);
     
             $data=user::find(Auth::user()->id);
-            if (File::exists($data->image)) {
-                  File::delete($data->image);
+            if (File::exists('uimg/'.$data->image)) {
+                  File::delete('uimg/'.$data->image);
             }
             $data->image=$file_name;
             $data->update();

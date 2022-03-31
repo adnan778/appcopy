@@ -32,7 +32,7 @@
                   <div class="card-header border-bottom text-center">
                     <div class="mb-3 mx-auto">
                     <a href="{{route('changeProfilePicture')}}">
-                      <img id="picture" class="rounded-circle" src="/{{$users->image}}" alt="User Avatar" width="110">
+                      <img id="picture" class="rounded-circle" src="/uimg/{{$users->image}}" alt="User Avatar" width="110">
                     </a>
                      </div>
                     <h4 class="mb-0">{{$users->name}}</h4>

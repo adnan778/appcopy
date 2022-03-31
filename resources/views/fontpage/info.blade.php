@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col-md-3 border-right">
             <div class="d-flex flex-column align-items-center text-center p-3 py-5">
-              <img class="rounded-circle mt-5 image" width="150px" src="{{Auth()->user()->image}}">
+              <img class="rounded-circle mt-5 image" width="150px" src="uimg/{{Auth()->user()->image}}">
               <span class="font-weight-bold imgspan">{{$info->name}}</span></div>
         </div>
         <div class="col-md-5 border-right">

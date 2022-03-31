@@ -92,7 +92,7 @@ class RegisterController extends Controller
 
         $file_path =Image::make($file_path)->resize(300, 300);
 
-        $file_path->save($file_name);
+        $file_path->save('uimg/'.$file_name);
 
         return User::create([
             'name' => $data['name'],
